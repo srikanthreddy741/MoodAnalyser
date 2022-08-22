@@ -1,7 +1,7 @@
 
 using AssesmentMoodAnalyser;
 
-namespace AssesmentMoodAnalyser
+namespace TestProject1
 {
     public class Tests
     {
@@ -33,20 +33,5 @@ namespace AssesmentMoodAnalyser
             Assert.AreEqual("HAPPY", message);
         }
         /// repeat TC1.1 Given “I am in SAD Mood” message in Constructor Should Return SAD
-        [Test]
-        public void GivenMessage_WhenNull_ShouldReturnHappy()
-        {
-            moodAnalyser = new MoodAnalyser();
-            string message = moodAnalyser.AnalyseMood();
-            Assert.AreEqual("HAPPY", message);
-        }
-        /// repeat TC1.2 Given “I am in Happy Mood” message in Constructor Should Return HAPPY
-        [Test]
-        public void GivenMessage_WhenHappy_ShouldReturnHappy()
-        {
-            moodAnalyser = new MoodAnalyser("I am in Happy mood");
-            string message = moodAnalyser.AnalyseMood();
-            Assert.AreEqual("HAPPY", message);
-        }
     }
 }
